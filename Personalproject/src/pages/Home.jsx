@@ -4,6 +4,8 @@ import '../styles/services.css';
 import medicalImage from '../assets/images/md15.jpg';
 import medicalImage1 from '../assets/images/md18.jpg';
 import medicalImage2 from '../assets/images/md21.jpg';
+import image1 from '../assets/images/m17.webp'
+
 import '../styles/Home.css';
 
 function Home() {
@@ -30,6 +32,10 @@ function Home() {
             </div>
 
             {/* Speciality Section */}
+
+
+            
+
             <div className="below-image">
                 <h3 className="speciality">
                     Find your specialty
@@ -41,6 +47,27 @@ function Home() {
 
             {/* List of Specialties */}
            
+            <div>
+            
+        
+        <div className='doctor-container' id='doctor-speciality'>
+        <img src={image1} className='image' />
+            <div>
+                <ul className='speciality-list'>
+                    <div className='first-line'>
+                    <li>Neurosurgeon</li>
+                    <li>Optician</li>
+                    <li>Cardiologists</li>
+                    </div>
+                    <div className='second-line'>
+                    <li>Dermatologists</li>
+                    <li>Gastroenterologists</li>
+                    </div>
+                   
+                </ul>
+            </div>
+        </div>
+        </div>
 
 
             <div className="services-intro">

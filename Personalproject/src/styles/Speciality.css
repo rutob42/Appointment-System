@@ -1,89 +1,102 @@
+/* Style for the image */
+.image {
+    width: 500px;
+    max-width: 500px; /* Sets a maximum width for larger screens */
+    border-radius: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the image */
+.image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .image {
+        max-width: 80%; /* Adjusts the width on smaller screens */
+        margin-bottom: 15px;
+    }
+}
+
+
 /* Container for the doctor specialty section */
 .doctor-container {
     display: flex;
-    flex-direction: column;
+    gap: 90px;
     align-items: center;
     justify-content: center;
-    margin: 50px auto;
-    padding: 2rem;
-    background-color: #f9fafb;
-    border-radius: 15px;
-    width: 80%;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 20px;
+    width: 85%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
 }
 
 /* Hover effect for the container */
 .doctor-container:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
 }
-
-/* Image styling */
-
 
 /* List container */
 .specialty-list-container {
-    width: 100%;
+    width: 1%;
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 5px;
 }
 
 /* List Styling */
 .speciality-list {
     list-style: none;
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap into multiple rows */
-    justify-content: center;
+    margin-left: 1px;
+    padding-left: 10px;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
+    gap: 1rem;
 }
 
 /* Styling for each list item */
 .speciality-list li {
-    font-size: 1.4rem;
-    font-weight: 600;
-    padding: 15px 30px;
-    background-color: #3d87c1;
-    color: white;
+    font-size:20px;
+    font-weight: 100;
+    padding: 9px 10px;
+    color: #000000;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Hover effect for list items */
 .speciality-list li:hover {
-    transform: translateY(-5px);
-    background-color: #ff6347;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-7px);
+    background: linear-gradient(135deg, #000000, #000000);
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Styling for the first line of specialties */
-.first-line {
+/* Styling for each line of specialties */
+.specialty-lines {
     display: flex;
     justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-}
-
-/* Styling for the second line of specialties */
-.second-line {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+    gap: 1px;
     flex-wrap: wrap;
 }
 
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
     .speciality-list li {
-        font-size: 1.2rem;
-        padding: 12px 25px;
+        font-size: 1.1rem;
+        padding: 10px 20px;
     }
 
     .doctor-container {

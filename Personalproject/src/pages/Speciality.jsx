@@ -1,9 +1,10 @@
 import React from 'react';
 import '../styles/Speciality.css';
+import image1 from '../assets/images/md18.jpg'
 function Speciality(){
     return(
         <div>
-            <img className='image' />
+            <img src={image1} className='image' />
         
         <div className='doctor-container' id='doctor-speciality'>
             
