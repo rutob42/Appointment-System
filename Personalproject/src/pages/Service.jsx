@@ -1,49 +1,12 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
 import '../styles/services.css';
 import medicalImage from '../assets/images/md15.jpg';
 import medicalImage1 from '../assets/images/md18.jpg';
 import medicalImage2 from '../assets/images/md21.jpg';
-import '../styles/Home.css';
 
-function Home() {
-    const specialties = [
-        { id: 1, name: "Cardiology" },
-        { id: 2, name: "Neurology" },
-        { id: 3, name: "Orthopedics" },
-        // Add more specialties as needed
-    ];
-
+function Service() {
     return (
-        <div>
-            <div className='home-container'>
-                <div className='img'>
-                    <header className='home-header'>
-                    <h2>Welcome to Your Trusted Health Partner!</h2>
-<p>
-    Prioritizing your wellness, every step of the way. <br />
-    Book appointments, connect with leading specialists, <br />
-    and experience care that feels like home.
-</p>
-                    </header>
-                </div>
-            </div>
-
-            {/* Speciality Section */}
-            <div className="below-image">
-                <h3 className="speciality">
-                    Find your specialty
-                    <p className="speciality-description">
-                        Simply by a click of a button, you get to view your desired specialist
-                    </p>
-                </h3>
-            </div>
-
-            {/* List of Specialties */}
-           
-
-
-            <div className="services-intro">
+        <div className="services-intro">
             <h3>Services</h3>
             <p className="intro-text">
                 We offer a wide range of healthcare services tailored to meet your needs. 
@@ -68,8 +31,7 @@ function Home() {
                 </div>
             </div>
         </div>
-        </div>
     );
 }
 
-export default Home;
+export default Service;
